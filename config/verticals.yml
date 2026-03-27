@@ -1,0 +1,210 @@
+# Vertical Rotation Configuration
+# The agent cycles through verticals in order, spending loops_per_rotation
+# iterations on each before advancing. After a full cycle, gaps from the
+# first pass are targeted.
+
+rotation_order:
+  - healthcare
+  - financial_services
+  - manufacturing
+  - retail
+  - energy
+  - government
+  - legal
+  - logistics
+
+current_vertical: healthcare
+current_cycle: 1
+
+verticals:
+  healthcare:
+    loops_this_rotation: 0
+    loops_per_rotation: 4
+    business_processes:
+      - Clinical Trial Management
+      - Patient Discharge Planning
+      - Claims Adjudication
+      - Formulary Management
+      - Medical Device Tracking
+      - Revenue Cycle Management
+      - Nurse Staffing Optimization
+      - Patient Readmission Prevention
+      - Surgical Scheduling
+      - Lab Results Routing
+    constraints:
+      - HIPAA compliance
+      - FDA 21 CFR Part 11
+      - Real-time patient safety alerts
+      - Cross-facility data sharing restrictions
+      - Prior authorization delays
+      - Interoperability mandates (HL7 FHIR)
+      - Clinical decision support requirements
+      - Controlled substance tracking (DEA)
+
+  financial_services:
+    loops_this_rotation: 0
+    loops_per_rotation: 4
+    business_processes:
+      - KYC/AML Onboarding
+      - Trade Settlement
+      - Credit Risk Assessment
+      - Regulatory Reporting
+      - Claims Processing
+      - Loan Origination
+      - Treasury Management
+      - Fraud Investigation
+      - Portfolio Rebalancing
+      - Wire Transfer Approval
+    constraints:
+      - SOX compliance
+      - Basel III capital requirements
+      - Real-time fraud detection SLAs
+      - Cross-border regulatory differences
+      - Audit trail requirements
+      - PCI-DSS for payment data
+      - GDPR data residency
+      - Sanctions screening latency
+
+  manufacturing:
+    loops_this_rotation: 0
+    loops_per_rotation: 4
+    business_processes:
+      - Production Scheduling
+      - Quality Non-Conformance
+      - Bill of Materials Management
+      - Shop Floor Execution
+      - Preventive Maintenance
+      - Supplier Quality Management
+      - Engineering Change Orders
+      - Batch Traceability
+      - Capacity Planning
+      - Waste Reduction (Lean/Six Sigma)
+    constraints:
+      - ISO 9001 / IATF 16949 compliance
+      - Real-time machine OEE monitoring
+      - Lot traceability requirements
+      - Hazardous materials handling
+      - Multi-plant synchronization
+      - Supplier lead time variability
+      - Regulatory recall readiness
+      - Energy consumption targets
+
+  retail:
+    loops_this_rotation: 0
+    loops_per_rotation: 4
+    business_processes:
+      - Demand Forecasting
+      - Markdown Optimization
+      - Omnichannel Order Fulfillment
+      - Category Management
+      - Loyalty Program Management
+      - Store Labor Scheduling
+      - Returns Processing
+      - Vendor Managed Inventory
+      - Price Matching Automation
+      - Seasonal Assortment Planning
+    constraints:
+      - Real-time inventory accuracy across channels
+      - Peak season scalability (Black Friday)
+      - Fresh/perishable expiry management
+      - Regional pricing regulations
+      - Consumer data privacy (CCPA/GDPR)
+      - Last-mile delivery SLAs
+      - Franchise vs corporate store differences
+      - Shrinkage and loss prevention
+
+  energy:
+    loops_this_rotation: 0
+    loops_per_rotation: 4
+    business_processes:
+      - Energy Procurement
+      - Grid Load Balancing
+      - Renewable PPA Management
+      - Meter Data Management
+      - Outage Response Coordination
+      - Carbon Credit Trading
+      - Pipeline Integrity Management
+      - Demand Response Programs
+      - Rate Case Preparation
+      - Distributed Energy Resource Management
+    constraints:
+      - NERC CIP cybersecurity standards
+      - Real-time grid frequency requirements
+      - Renewable intermittency management
+      - Multi-state regulatory compliance
+      - Environmental impact reporting
+      - Safety Management System (SMS) requirements
+      - FERC market manipulation rules
+      - Critical infrastructure protection
+
+  government:
+    loops_this_rotation: 0
+    loops_per_rotation: 4
+    business_processes:
+      - Grant Management
+      - Procurement/RFP Processing
+      - Benefits Eligibility Determination
+      - Permitting and Licensing
+      - Tax Assessment and Collection
+      - Emergency Response Coordination
+      - Freedom of Information (FOIA) Processing
+      - Fleet Management
+      - Inspector General Audits
+      - Interagency Data Sharing
+    constraints:
+      - FedRAMP / StateRAMP authorization
+      - Section 508 accessibility
+      - Federal Acquisition Regulation (FAR)
+      - Personally Identifiable Information (PII) handling
+      - Records retention schedules
+      - Multi-jurisdiction coordination
+      - Political cycle budget constraints
+      - Transparency and public accountability
+
+  legal:
+    loops_this_rotation: 0
+    loops_per_rotation: 4
+    business_processes:
+      - Contract Lifecycle Management
+      - E-Discovery and Document Review
+      - Matter Management
+      - Regulatory Filing and Compliance
+      - IP Portfolio Management
+      - Litigation Hold Management
+      - Outside Counsel Management
+      - Legal Spend Analytics
+      - Board Governance Support
+      - M&A Due Diligence
+    constraints:
+      - Attorney-client privilege protection
+      - Jurisdictional conflict of laws
+      - Court filing deadlines (statute of limitations)
+      - Legal hold preservation obligations
+      - Multi-language document requirements
+      - Ethical walls between matters
+      - Regulatory change velocity
+      - Chain of custody for evidence
+
+  logistics:
+    loops_this_rotation: 0
+    loops_per_rotation: 4
+    business_processes:
+      - Route Optimization
+      - Carrier Rate Negotiation
+      - Customs and Trade Compliance
+      - Warehouse Slotting Optimization
+      - Last-Mile Delivery Management
+      - Freight Audit and Payment
+      - Cross-Docking Operations
+      - Reverse Logistics
+      - Cold Chain Monitoring
+      - Container Yard Management
+    constraints:
+      - Customs clearance time windows
+      - Hazmat transportation regulations (DOT/IATA)
+      - Driver hours-of-service (HOS) compliance
+      - Temperature excursion thresholds
+      - Port congestion and vessel schedule changes
+      - Cross-border documentation requirements
+      - Carrier liability and claims
+      - Real-time shipment visibility SLAs
