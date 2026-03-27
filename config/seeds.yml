@@ -67,3 +67,11 @@ explored:
     timestamp: 2026-03-27T02:00:00Z
     result: keep
     pattern_name: sox-continuous-controls
+
+  - vertical: manufacturing
+    business_process: Quality Non-Conformance
+    constraint: Lot traceability requirements
+    capability: Power Automate desktop flows (RPA) + Copilot Studio generative orchestration
+    timestamp: 2026-03-27T02:30:00Z
+    result: keep
+    pattern_name: lot-genealogy-rpa-agent
