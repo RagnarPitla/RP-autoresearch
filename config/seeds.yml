@@ -35,3 +35,35 @@ explored:
     timestamp: 2026-03-27T00:45:00Z
     result: discard
     pattern_name: surgical-safety-sentinel
+
+  - vertical: financial_services
+    business_process: KYC/AML Onboarding
+    constraint: Cross-border regulatory differences
+    capability: MCP support in Copilot Studio
+    timestamp: 2026-03-27T01:00:00Z
+    result: keep
+    pattern_name: kyc-jurisdiction-mesh
+
+  - vertical: financial_services
+    business_process: Fraud Investigation
+    constraint: Real-time fraud detection SLAs
+    capability: Copilot Studio autonomous triggers + extended thinking
+    timestamp: 2026-03-27T01:30:00Z
+    result: refine
+    pattern_name: fraud-investigation-narrative
+
+  - vertical: financial_services
+    business_process: Trade Settlement
+    constraint: Audit trail requirements
+    capability: Copilot Studio agent builder APIs
+    timestamp: 2026-03-27T01:45:00Z
+    result: discard
+    pattern_name: trade-settlement-ephemeral-agents
+
+  - vertical: financial_services
+    business_process: Regulatory Reporting
+    constraint: SOX compliance
+    capability: Dataverse virtual tables
+    timestamp: 2026-03-27T02:00:00Z
+    result: keep
+    pattern_name: sox-continuous-controls
