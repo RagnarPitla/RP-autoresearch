@@ -114,7 +114,7 @@ verticals:
       - Shrinkage and loss prevention
 
   energy:
-    loops_this_rotation: 0
+    loops_this_rotation: 1
     loops_per_rotation: 4
     business_processes:
       - Energy Procurement

@@ -131,3 +131,11 @@ explored:
     timestamp: 2026-03-27T04:00:00Z
     result: discard
     pattern_name: trust-bounded-vmi
+
+  - vertical: energy
+    business_process: Demand Response Programs
+    constraint: Renewable intermittency management
+    capability: Copilot Studio autonomous triggers + LangGraph checkpointed state machines
+    timestamp: 2026-03-27T04:15:00Z
+    result: refine
+    pattern_name: multi-timescale-energy
