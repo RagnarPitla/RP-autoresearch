@@ -1,0 +1,6 @@
+# Explored Seed Combinations
+# The agent logs every seed it tries here to avoid re-exploration.
+# Each entry records the vertical, business process, constraint,
+# capability, timestamp, result, and pattern name (if kept).
+
+explored: []
