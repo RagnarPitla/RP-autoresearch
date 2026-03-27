@@ -75,3 +75,27 @@ explored:
     timestamp: 2026-03-27T02:30:00Z
     result: keep
     pattern_name: lot-genealogy-rpa-agent
+
+  - vertical: manufacturing
+    business_process: Engineering Change Orders
+    constraint: Multi-plant synchronization
+    capability: A2A (Agent-to-Agent) protocol
+    timestamp: 2026-03-27T03:00:00Z
+    result: discard
+    pattern_name: eco-multi-plant-a2a
+
+  - vertical: manufacturing
+    business_process: Preventive Maintenance
+    constraint: Energy consumption targets
+    capability: Copilot Studio autonomous triggers + Instructor structured extraction
+    timestamp: 2026-03-27T03:10:00Z
+    result: refine
+    pattern_name: energy-aware-maintenance
+
+  - vertical: manufacturing
+    business_process: Batch Traceability
+    constraint: Regulatory recall readiness
+    capability: Copilot Studio generative orchestration + Power Platform custom connectors with AI
+    timestamp: 2026-03-27T03:20:00Z
+    result: refine
+    pattern_name: recall-readiness-tracer

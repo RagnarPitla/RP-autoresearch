@@ -24,3 +24,10 @@ Each entry includes the original seed, score, and notes on what fell short.
 - **Original timestamp:** 2026-03-27T01:30:00Z
 - **Why it fell short:** Novelty (4) — the fraud detection/investigation AI space is saturated. Unit21, DataVisor, Sardine, Cleafy Nyx all have autonomous AI agents for alert triage, behavioral analytics, and SAR automation. Cleafy Nyx specifically launched as "the first autonomous fraud investigation platform" doing full investigations in <4 minutes. Extended thinking for explainability is a model feature, not an architectural innovation.
 - **Ideas for improvement:** The angle that MIGHT work: multi-agent adversarial fraud simulation — agents that RED TEAM the bank's own fraud detection by simulating novel fraud typologies and testing whether the detection system catches them. This flips from defense to offense and might be architecturally novel. Would need to combine with a different capability.
+
+## Energy-Aware Maintenance Agent (composite: 6.00)
+- **Seed:** Preventive Maintenance x Energy consumption targets x Copilot Studio autonomous triggers + Instructor structured extraction
+- **Vertical:** Manufacturing
+- **Original timestamp:** 2026-03-27T03:10:00Z
+- **Why it fell short:** Novelty (4) — the predictive maintenance AI market is $23.5B with mature solutions. Energy-aware maintenance prioritization and structured extraction from reports are well-known approaches. Digital twins already do this better.
+- **Ideas for improvement:** Could become novel if focused on a GOVERNANCE angle — an agent that manages the CONFLICT between maintenance schedules and production schedules, where energy consumption is the tiebreaker. The agent would negotiate maintenance windows with production scheduling agents, using energy waste as economic justification for maintenance interruptions. This shifts from "predict failure" to "negotiate optimal maintenance timing."
