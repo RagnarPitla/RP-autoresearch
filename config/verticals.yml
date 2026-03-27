@@ -13,7 +13,7 @@ rotation_order:
   - legal
   - logistics
 
-current_vertical: retail
+current_vertical: energy
 current_cycle: 1
 
 verticals:
@@ -90,7 +90,7 @@ verticals:
       - Energy consumption targets
 
   retail:
-    loops_this_rotation: 0
+    loops_this_rotation: 4
     loops_per_rotation: 4
     business_processes:
       - Demand Forecasting

@@ -99,3 +99,35 @@ explored:
     timestamp: 2026-03-27T03:20:00Z
     result: refine
     pattern_name: recall-readiness-tracer
+
+  - vertical: retail
+    business_process: Markdown Optimization
+    constraint: Fresh/perishable expiry management
+    capability: Copilot Studio autonomous triggers + Dataverse virtual tables
+    timestamp: 2026-03-27T03:30:00Z
+    result: refine
+    pattern_name: perishable-markdown-cascade
+
+  - vertical: retail
+    business_process: Returns Processing
+    constraint: Franchise vs corporate store differences
+    capability: Copilot Studio connected agents + Dataverse business skills
+    timestamp: 2026-03-27T03:40:00Z
+    result: discard
+    pattern_name: franchise-returns-connected
+
+  - vertical: retail
+    business_process: Store Labor Scheduling
+    constraint: Shrinkage and loss prevention
+    capability: Claude computer use
+    timestamp: 2026-03-27T03:50:00Z
+    result: discard
+    pattern_name: shrinkage-weighted-scheduling
+
+  - vertical: retail
+    business_process: Vendor Managed Inventory
+    constraint: Real-time inventory accuracy across channels
+    capability: Copilot Studio connected agents + autonomous triggers
+    timestamp: 2026-03-27T04:00:00Z
+    result: discard
+    pattern_name: trust-bounded-vmi
