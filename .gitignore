@@ -1,23 +1,13 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-
-# Virtual environments
-.venv
-worktrees/
-results/
-queue/
-
 # Agent prompt files (generated per-session by launchers)
 CLAUDE.md
 AGENTS.md
 
-# Experimental code/artifacts
+# Working state
+.remember/
 dev/
 
-# Results file
-results.tsv
+# OS files
+.DS_Store
+
+# Node modules (if any tooling added later)
+node_modules/
