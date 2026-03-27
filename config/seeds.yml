@@ -139,3 +139,11 @@ explored:
     timestamp: 2026-03-27T04:15:00Z
     result: refine
     pattern_name: multi-timescale-energy
+
+  - vertical: energy
+    business_process: Carbon Credit Trading
+    constraint: Environmental impact reporting
+    capability: MCP support in Copilot Studio + Dataverse business skills
+    timestamp: 2026-03-27T04:30:00Z
+    result: refine
+    pattern_name: carbon-credit-provenance
