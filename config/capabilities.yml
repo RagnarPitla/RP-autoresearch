@@ -1,0 +1,134 @@
+# Emerging AI Capabilities Catalog
+# The agent picks from these when constructing seeds.
+# This is a living file — the agent can suggest additions
+# when it discovers new capabilities during research.
+
+microsoft:
+  - name: Copilot Studio connected agents
+    category: multi-agent
+    released: 2025-11
+    description: Agents that call other agents across tenants/orgs via secure handoff
+
+  - name: MCP support in Copilot Studio
+    category: integration
+    released: 2025-12
+    description: Model Context Protocol servers as data sources for Copilot Studio agents
+
+  - name: Copilot Studio generative orchestration
+    category: orchestration
+    released: 2025-06
+    description: AI-driven topic routing without explicit trigger phrases
+
+  - name: Dataverse virtual tables
+    category: data
+    description: Real-time read/write to external systems via virtual entities in Dataverse
+
+  - name: Power Automate desktop flows (RPA)
+    category: automation
+    description: UI-based automation for legacy systems without APIs
+
+  - name: Copilot Studio autonomous triggers
+    category: orchestration
+    released: 2026-01
+    description: Agents that activate on events without user initiation
+
+  - name: Dataverse business skills (msdyn_businessskill)
+    category: governance
+    released: 2025-09
+    description: First-party skill table for agent capability discovery
+
+  - name: Power Platform custom connectors with AI
+    category: integration
+    description: Custom API connectors with built-in AI transformation layers
+
+  - name: Copilot Studio agent builder APIs
+    category: devops
+    released: 2026-02
+    description: Programmatic agent creation and management via REST APIs
+
+anthropic:
+  - name: MCP remote servers (Streamable HTTP)
+    category: protocol
+    released: 2025-03
+    description: MCP servers accessible over HTTP with streaming support
+
+  - name: Claude tool use with forced tools
+    category: agent
+    description: Constrain Claude to use specific tools in specific order
+
+  - name: Claude Agent SDK
+    category: framework
+    released: 2025-05
+    description: Python/TS SDK for building multi-step agent workflows
+
+  - name: Claude extended thinking
+    category: reasoning
+    released: 2025-02
+    description: Chain-of-thought reasoning visible to the developer for complex tasks
+
+  - name: Claude computer use
+    category: automation
+    released: 2024-10
+    description: Direct GUI interaction for legacy systems without APIs
+
+openai:
+  - name: Assistants API with code interpreter
+    category: agent
+    description: Stateful agents with file handling and code execution
+
+  - name: Swarm multi-agent framework
+    category: multi-agent
+    description: Lightweight multi-agent handoff orchestration
+
+  - name: Codex CLI agent
+    category: agent
+    released: 2025-05
+    description: Terminal-native coding agent with sandboxed execution
+
+  - name: GPT function calling with parallel execution
+    category: agent
+    description: Multiple tool calls in a single turn for efficiency
+
+google:
+  - name: A2A (Agent-to-Agent) protocol
+    category: protocol
+    released: 2025-04
+    description: Open protocol for cross-platform agent communication
+
+  - name: Gemini grounding with Google Search
+    category: agent
+    description: Real-time web grounding for factual accuracy
+
+  - name: Gemini context caching
+    category: performance
+    released: 2025-06
+    description: Cache large context windows for repeated queries
+
+frameworks:
+  - name: LangGraph checkpointed state machines
+    category: orchestration
+    description: Cyclic agent graphs with persistent state and human-in-the-loop
+
+  - name: CrewAI role-based agents
+    category: multi-agent
+    description: Agents with defined roles, goals, and backstories collaborating on tasks
+
+  - name: AutoGen group chat
+    category: multi-agent
+    description: Multi-agent conversation with dynamic speaker selection
+
+  - name: Semantic Kernel planners
+    category: orchestration
+    description: AI-driven step-by-step plan generation and execution
+
+  - name: Semantic Kernel process framework
+    category: orchestration
+    description: Event-driven stateful workflows with AI steps
+
+  - name: DSPy optimized prompting
+    category: optimization
+    description: Programmatic prompt optimization through compilation
+
+  - name: Instructor structured extraction
+    category: data
+    description: Reliable structured data extraction from LLM outputs
