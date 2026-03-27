@@ -1,0 +1,58 @@
+name: Agentic Pattern Discovery
+
+on:
+  schedule:
+    # Run every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      session_minutes:
+        description: 'Max session duration in minutes'
+        required: false
+        default: '50'
+      run_content_pass:
+        description: 'Generate content for keep patterns after discovery'
+        required: false
+        default: 'true'
+        type: boolean
+
+concurrency:
+  group: discover
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 65
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Run discovery loop
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MAX_SESSION_MINUTES: ${{ github.event.inputs.session_minutes || '50' }}
+        run: ./run.sh "$MAX_SESSION_MINUTES"
+
+      - name: Run content pass
+        if: ${{ github.event.inputs.run_content_pass != 'false' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: ./content-pass.sh
+
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add patterns/ content/ patterns.tsv config/ ideas/
+          git diff --cached --quiet || git commit -m "discover: automated run $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
