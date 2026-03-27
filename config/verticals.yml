@@ -13,12 +13,12 @@ rotation_order:
   - legal
   - logistics
 
-current_vertical: healthcare
+current_vertical: financial_services
 current_cycle: 1
 
 verticals:
   healthcare:
-    loops_this_rotation: 0
+    loops_this_rotation: 4
     loops_per_rotation: 4
     business_processes:
       - Clinical Trial Management

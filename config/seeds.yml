@@ -3,4 +3,35 @@
 # Each entry records the vertical, business process, constraint,
 # capability, timestamp, result, and pattern name (if kept).
 
-explored: []
+explored:
+  - vertical: healthcare
+    business_process: Clinical Trial Management
+    constraint: FDA 21 CFR Part 11
+    capability: Copilot Studio autonomous triggers
+    timestamp: 2026-03-27T00:00:00Z
+    result: keep
+    pattern_name: clinical-trial-compliance-sentinel
+
+  - vertical: healthcare
+    business_process: Patient Readmission Prevention
+    constraint: Cross-facility data sharing restrictions
+    capability: Copilot Studio connected agents
+    timestamp: 2026-03-27T00:10:00Z
+    result: refine
+    pattern_name: cross-facility-readmission-prevention
+
+  - vertical: healthcare
+    business_process: Formulary Management
+    constraint: Prior authorization delays
+    capability: Dataverse business skills (msdyn_businessskill)
+    timestamp: 2026-03-27T00:25:00Z
+    result: keep
+    pattern_name: formulary-adaptive-prior-auth
+
+  - vertical: healthcare
+    business_process: Surgical Scheduling
+    constraint: Real-time patient safety alerts
+    capability: Semantic Kernel process framework
+    timestamp: 2026-03-27T00:45:00Z
+    result: discard
+    pattern_name: surgical-safety-sentinel
