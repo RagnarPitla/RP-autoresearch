@@ -20,8 +20,10 @@ Read `patterns/{name}/pattern.md` and `patterns/{name}/.score`.
 
 ### Generate `content/{name}/linkedin.md`
 
+**Title rule:** The hook or title MUST include "AI agent", "AI agents", or "agentic" so the audience immediately knows this is about AI agent architecture. Ragnar's audience follows him for AI agent content — if the title sounds like generic enterprise software, they'll scroll past.
+
 Structure:
-1. **Hook** (first 2 lines) — make people stop scrolling. Pattern interrupt, bold claim, counterintuitive insight, or provocative question. No generic openings.
+1. **Hook** (first 2 lines) — make people stop scrolling. MUST reference AI agents explicitly. Pattern interrupt, bold claim, counterintuitive insight, or provocative question. No generic openings. Examples: "This AI agent pattern changed how I think about [vertical]", "Most people build AI agents wrong for [use case]. Here's a pattern that actually works."
 2. **The problem** — paint the pain. Make the reader feel it. Name the role who suffers.
 3. **The pattern** — explain in plain English. No jargon. Use analogies. "Think of it like..."
 4. **Why it matters** — for this specific vertical. Tie to real business outcomes.
@@ -45,7 +47,7 @@ End with: "Views expressed are my own and do not represent Microsoft's official 
 ### Generate `content/{name}/youtube.md`
 
 Structure:
-1. **Viral Hook** (first 15 seconds) — pattern interrupt, bold claim, or "what if" scenario. The viewer must feel "I need to hear this."
+1. **Viral Hook** (first 15 seconds) — pattern interrupt, bold claim, or "what if" scenario. MUST mention AI agents explicitly in the first sentence. The viewer must feel "I need to hear this." Examples: "What if an AI agent could [bold claim]?", "I built an AI agent that [does something surprising]..."
 2. **Problem Setup** (2-3 minutes) — the pain. Make the viewer feel it. Real scenario, real consequences. "Here's what happens every day in [vertical]..."
 3. **Pattern Reveal** (3-4 minutes) — the architecture. Visual walkthrough. "Here's what I built..." Walk through the components one by one.
 4. **Live Demo Scenario** (2-3 minutes) — step through exactly how it works. User says X, agent does Y, Dataverse stores Z, Power Automate triggers W.

@@ -41,6 +41,8 @@ LOOP FOREVER:
 
 **Seed question:** "What novel agent architecture solves {constraint} in {business_process} by leveraging {capability} in a way nobody has built before?"
 
+**Skills lens:** For every seed, also ask: "What role do skills play in this pattern? How are skills discovered, composed, versioned, or governed? Does this pattern introduce a novel skill architecture?" The Skills + Agents + MCP trifecta is the new operating model for enterprise AI — patterns that explore novel skill architectures (skill discovery, skill chaining, skill marketplaces, skill governance, cross-agent skill sharing via MCP) are high-priority targets.
+
 ### Phase 2: RESEARCH (Light) — spend ~2-3 minutes
 
 Do quick web searches to validate this seed:
@@ -48,6 +50,7 @@ Do quick web searches to validate this seed:
 - What does Microsoft Learn say about the relevant D365/Copilot Studio/Dataverse capabilities?
 - Has anyone already built something similar? (blog posts, case studies, conference talks)
 - Compare against `known-patterns.md` — is this just a known pattern in disguise?
+- **Skills research:** How do agent skills (Dataverse business skills, MCP tools, Semantic Kernel skills, OpenAI function definitions) factor into this pattern? Skills are the atomic unit of agent capability — every pattern should consider how skills are discovered, composed, chained, governed, and shared across agents. The trifecta of Skills + Agents + MCP is reshaping enterprise AI — patterns that leverage this trifecta score higher on novelty and content value.
 
 If the seed is clearly nonsensical, already solved, or too close to a known pattern:
 skip directly to logging a DISCARD row in `patterns.tsv` and pick a new seed.
